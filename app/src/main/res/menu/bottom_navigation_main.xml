@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/text_home"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_cadastro_pacientes"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:title="@string/text_pacinete"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_cadastro_consulta"
+        android:enabled="true"
+        android:icon="@drawable/ic_content_paste_white_24dp"
+        android:title="@string/text_consulta"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_hist_consultas"
+        android:enabled="true"
+        android:icon="@drawable/ic_today_black_24dp"
+        android:title="@string/text_hist_consulta"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_grafico"
+        android:enabled="true"
+        android:icon="@drawable/ic_show_chart_white_24dp"
+        android:title="@string/text_grafico"
+        app:showAsAction="ifRoom" />
+</menu>

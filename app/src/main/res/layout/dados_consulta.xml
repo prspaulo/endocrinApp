@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dados_consulta">
+
+    <TextView
+        android:id="@+id/txtDataConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:selectAllOnFocus="false"
+        android:text="Consulta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/editDataConsulta"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDataConsulta"
+        tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+        android:id="@+id/txtEstatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:selectAllOnFocus="false"
+        android:text="Estatura (cm)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPeso"
+        app:layout_constraintTop_toBottomOf="@+id/editDataConsulta"/>
+
+    <EditText
+        android:id="@+id/editEstatura"
+        android:layout_width="113dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/background"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editPeso"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstatura"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:selectAllOnFocus="false"
+        android:text="Peso (kg)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDataConsulta"/>
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/txtMenarcaConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:selectAllOnFocus="false"
+        android:text="Data Menarca"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDataConsulta"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/editMenarca"
+        android:layout_width="113dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background"
+        android:inputType="date"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEstatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editDataConsulta"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenarcaConsulta"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+        android:id="@+id/txtIniTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:selectAllOnFocus="false"
+        android:text="Iníco tratamento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPeso"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/editIniTratamento"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:inputType="date"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIniTratamento"
+        tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+        android:id="@+id/txtFimTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="43dp"
+        android:selectAllOnFocus="false"
+        android:text="Fim tratamento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPeso"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editFimTratamento"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/background"
+        android:inputType="date"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editIniTratamento"
+        app:layout_constraintTop_toBottomOf="@+id/txtFimTratamento"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIniTratamento"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chEscTanner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColorLink="#9bd1df"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textIsSelectable="false"
+                app:buttonTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="5dp"
+                android:selectAllOnFocus="false"
+                android:text="Escala de Tanner"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtEscalaTanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:selectAllOnFocus="false"
+                    android:text=" "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <Spinner
+                    android:id="@+id/spinnerMama"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:selectAllOnFocus="false"
+                    android:text="Pelo"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <Spinner
+                    android:id="@+id/spinnerPelo"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cad_consulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape"
+        android:text="Cadastrar consulta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_consulta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_main"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

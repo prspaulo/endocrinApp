@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_atuaiza_consulta">
+
+    <TextView
+        android:id="@+id/txtDataCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:selectAllOnFocus="false"
+        android:text="Data consulta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editDataCon"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDataCon"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txtNpaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:selectAllOnFocus="false"
+        android:text="Nome"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toEndOf="@+id/txtDataCon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editNpaciente"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/editDataCon"
+        app:layout_constraintTop_toBottomOf="@+id/txtNpaciente"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txtNidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:selectAllOnFocus="false"
+        android:text="Idade"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDataCon"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editNidade"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNidade"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:selectAllOnFocus="false"
+        android:text="Estatura (cm)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toEndOf="@+id/txtNidade"
+        app:layout_constraintTop_toBottomOf="@+id/editNpaciente"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editAlt"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/editNidade"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtPesoPac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:selectAllOnFocus="false"
+        android:text="Peso (kg)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNidade"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editPesoPac"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPesoPac"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPesoPac"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chEscTannerAtuali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escala de Tanner"
+                android:textColorLink="#9bd1df"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textIsSelectable="false"
+                app:buttonTint="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtEscalaTannerAtuali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:selectAllOnFocus="false"
+                    android:text="Mama "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <Spinner
+                    android:id="@+id/spinnerMamaAtuali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:selectAllOnFocus="false"
+                    android:text="Pelo"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <Spinner
+                    android:id="@+id/spinnerPeloAtuali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtIniTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Início Tratamento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editIniTratamentoAtu"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIniTratamento"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtFimTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Fim Tratamento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toEndOf="@+id/txtIniTratamento"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editFimTratamentoAtu"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/editIniTratamentoAtu"
+        app:layout_constraintTop_toBottomOf="@+id/txtFimTratamento"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMenarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="Idade Menarca"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toEndOf="@+id/txtPesoPac"
+        app:layout_constraintTop_toBottomOf="@+id/editAlt"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editMenarcaAtu"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints=""
+        android:background="@drawable/background"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/editPesoPac"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenarca"
+        tools:ignore="MissingConstraints" />
+    <!--<Button-->
+        <!--android:id="@+id/btn_atualiza_consulta"-->
+        <!--android:layout_width="208dp"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginStart="40dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:background="@drawable/shape"-->
+        <!--android:text="Atualizar consulta"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textStyle="bold"-->
+        <!--app:fontFamily="casual"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

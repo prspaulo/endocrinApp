@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Endocrin App</string>
+    <string name="text_home">Home</string>
+    <string name="text_pacinete">Paciente</string>
+    <string name="text_consulta">Consulta</string>
+    <string name="text_hist_consulta">Histórico</string>
+    <string name="text_grafico">Gráfico</string>
+    <string name="email">Email</string>
+    <string name="n_o_possui_cadastro_cadastre_se">Não possui cadastro? Cadastre-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="legenda">Escala mama</string>
+</resources>
